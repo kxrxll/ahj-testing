@@ -1,6 +1,6 @@
 import checkLuhn from './luhnFunc';
 
-export default class TaskManager {
+export default class CardValidator {
   constructor(el) {
     this.el = el;
     this.input = el.querySelector('.validationinput');

@@ -7,9 +7,11 @@ describe('Card form', () => {
   const baseUrl = 'http://localhost:9000';
   beforeAll(async () => {
     browser = await puppetteer.launch({
+      /*
       headless: false,
       slowMo: 100,
       devtools: true,
+      */
     });
     page = await browser.newPage();
   });
