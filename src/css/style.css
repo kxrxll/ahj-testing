@@ -1,0 +1,86 @@
+.formblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    width: 600px;
+    min-height: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.label {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    padding-left: 15px;
+    color: lightslategray;
+}
+
+input {
+    width: 90%;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 8px 6px 8px 20px;
+    margin-left: 15px;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid goldenrod;
+}
+
+button {
+    width: 90%;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: aquamarine;
+    padding: 8px 6px 8px 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: lightslategray;
+}
+
+.image {
+    width: 150px;
+    border: 2px solid lightgray;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.warning {
+    color: purple;
+}
+
+.hide {
+    display: none;
+}
+
+.cross {
+    position: relative;
+    color: red;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    height: 20px;
+}
