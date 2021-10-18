@@ -19,7 +19,8 @@ export default class TaskManager {
     this.button.addEventListener('click', this.onButtonPress.bind(this));
   }
 
-  onButtonPress() {
+  onButtonPress(evt) {
+    evt.preventDefault();
     const cardNumber = this.input.value;
     // Luhn validation
     if (checkLuhn(cardNumber)) {
@@ -47,11 +48,13 @@ export default class TaskManager {
         this.mir.classList.remove('disable');
       }
       this.input.disabled = true;
+      this.input.classList.add('valid');
     } else {
       this.warning.classList.remove('hide');
       this.input.disabled = true;
     }
     this.button.textContent = 'Попробуй еще!';
+    this.input.classList.add('failed');
     this.button.addEventListener('click', () => document.location.reload());
   }
 }
