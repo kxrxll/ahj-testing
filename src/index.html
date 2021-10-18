@@ -7,17 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-  <section class='imagevalidator'>
-    <div class='formblock'>
-      <p class='label'>Название изображения</p>
-      <input type="text" class='imagename'>
-      <p class='label'>Ссылка</p>
-      <input type="text" class='imagelink'>
-      <p class='label warning hide'>Ссылка не рабочая!</p>
-      <button class='imagebutton'>Добавить</button>
+  <section class='cardvalidator'>
+    <div class='cards'>
+      <img class='disable visa' src="./img/visa.png">
+      <img class='disable master' src="./img/mastercard.png">
+      <img class='disable amex' src="./img/amex.png">
+      <img class='disable mir' src="./img/mir.png">
+      <img class='disable dinner' src="./img/diners.png">
+      <img class='disable discover' src="./img/discover.png">
+      <img class='disable jcb' src="./img/jcb.png">
     </div>
-    <p class='label'>Галерея</p>
-    <div class='gallery'>
+    <div>
+    <input type="text" class='validationinput'>
+    <p class='warning hide'>Номер карты недействителен!</p>
+    <button class='validationbutton'>Проверить</button>
     </div>
   </section>
 </body>

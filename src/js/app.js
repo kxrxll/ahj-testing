@@ -1,4 +1,4 @@
-import ImageLoader from './ImageLoader';
+import CardValidator from './CardValidator';
 
-const imageLoader = new ImageLoader(document.querySelector('.imagevalidator'));
+const imageLoader = new CardValidator(document.querySelector('.cardvalidator'));
 imageLoader.addEvents();
