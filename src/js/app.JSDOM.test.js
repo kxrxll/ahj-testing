@@ -1,4 +1,3 @@
-/*
 import CardValidator from './CardValidator';
 
 const jsdom = require('jsdom');
@@ -28,10 +27,9 @@ test('should validate input', () => {
   const container = document.querySelector('.cardvalidator');
   const widget = new CardValidator(container);
   widget.addEvents();
-  const input = container.querySelector(CardValidator.validationinput);
+  const input = container.querySelector('.validationinput');
   input.value = '2201382000000013';
-  const submit = container.querySelector(CardValidator.validationbutton);
+  const submit = container.querySelector('.validationbutton');
   submit.click();
   expect(input.classList.contains('valid')).toBeTruthy();
 });
-*/

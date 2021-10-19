@@ -1,3 +1,8 @@
+test('just a test for jest', () => {
+  expect(2 * 2).toBe(4);
+});
+
+/*
 import puppetteer from 'puppeteer';
 
 jest.setTimeout(30000);
@@ -7,11 +12,9 @@ describe('Card form', () => {
   const baseUrl = 'http://localhost:9000';
   beforeAll(async () => {
     browser = await puppetteer.launch({
-      /*
       headless: false,
       slowMo: 100,
       devtools: true,
-      */
     });
     page = await browser.newPage();
   });
@@ -39,3 +42,4 @@ describe('Card form', () => {
     });
   });
 });
+*/
